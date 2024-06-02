@@ -131,32 +131,186 @@ import Footer from "../components/Footer.astro";
         </div>
 
 
-        <div class="flex flex-col w-[90%] max-w-[1400px] mx-auto gap-2 pt-6">
-            <img width="1400" height="935" loading="lazy" src="../Demoler/1.webp" alt="2">
-            <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/2.webp" alt="3">
-            <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/3.webp" alt="4">
-            <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/4.webp" alt="5">
-            <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/5.webp" alt="6">
-            <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/6.webp" alt="7">
-                    <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/7.webp" alt="8">
-                    <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/8.webp" alt="9">
-                    <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/9.webp" alt="10">
-                    <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/10.webp" alt="11">
-                    <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            <img width="1400" height="935" loading="lazy" src="../Demoler/12.webp" alt="12">
-                    <p class="mb-10 text-[10px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <div class="w-[90%] max-w-[1400px] mx-auto mb-8">
+            <div class="gallery grid grid-cols-2 gap-4">
+                <img
+                    width="700"
+                    height="700"
+                    loading="lazy"
+                    class="imagen hoverImg"
+                    src="../Demoler/1.webp"
+                    alt="5"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/2.webp"
+                alt="8"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/3.webp"
+                alt="6"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/4.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/5.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/6.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/7.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/8.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/9.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/10.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/12.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/13.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/14.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/15.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/16.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/17.webp"
+                alt="7"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Demoler/18.webp"
+                alt="7"
+                />
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <button id="cerrarModalBtn" class="btn-cerrar">X</button>
+            <img
+                loading="lazy"
+                id="overlay-img"
+                class="overlay-img"
+                src=""
+                alt=""
+            />
         </div>
 
     <Footer />
 
-    <script src="../carousel.js"></script>
+    <script>
+        const images = document.querySelectorAll(".image");
+        const totalSlides = images.length;
+        let currentSlideIndex = 0;
+
+        const prev = document.querySelector("#carousel-prev");
+        const next = document.querySelector("#carousel-next");
+
+        function nextImg() {
+            if (currentSlideIndex < totalSlides - 1) {
+                images[currentSlideIndex].classList.add("hidden");
+                currentSlideIndex++;
+                images[currentSlideIndex].classList.remove("hidden");
+            }
+        }
+        function prevImg() {
+            if (currentSlideIndex > 0) {
+                images[currentSlideIndex].classList.add("hidden");
+                currentSlideIndex--;
+                images[currentSlideIndex].classList.remove("hidden");
+            }
+        }
+
+        prev.addEventListener("click", prevImg);
+        next.addEventListener("click", nextImg);
+
+    </script>
+    
 </main>
