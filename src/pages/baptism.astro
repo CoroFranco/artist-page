@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Felipe Franco We Are Dust Project" />
+
+<main>
+    <section class="sm:h-screen w-screen">
+        <Header />
+        <div class="sm:pr-[25%] text-center sm:text-right">
+            <h1>Baptism</h1>
+            <p>2023</p>
+        </div>
+
+        <div
+            class="w-screen flex justify-center lg:h-[500px] sm:h-[400px] h-[300px] max-w-[1200px] m-auto sm:my-20 my-10"
+        >
+            <iframe
+                class="w-[90%]"
+                src="https://www.youtube.com/embed/i1SGXNqe9RE?si=Y2yGeQRohBoUcLIv"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="w-screen hidden sm:flex justify-center animate-bounce">
+            <a href="#next4">
+                <img
+                    class="w-[30px] cursor-pointer"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO1JREFUSEvtlUEKwjAQRed7CO80OYuCgoIFEQVFQcGCniVzHs/hYiTSQqxJG63dSLvN5L9k8pKCOv7QcT79McAYk6nqUESmdW1k5jMR3UQkD9UFW+QmAZi4CaqaxyCVup2ILKuQGOACYFQWhyB+eLGQq4iMkwCuiJlfIER0sNZmbswYsyeihbeAYLgbr7UoAFmr6gDAKiW8EVDs5AhgFjpAVT2JyLxOgqR7wMxvkJTw2h1UNfUhfvhPNWXmLYC7tXZTtM/Xudf06UqvafzKxDRt+mElXbQypKppU3jSU5ES0vqpaAP5qEXfgDoHPADhtsQZRrNBuAAAAABJRU5ErkJggg=="
+                />
+            </a>
+        </div>
+    </section>
+
+    <section id="next4">
+        <p
+            class="w-[90%] max-w-[700px] m-auto my-28 py-10 border-y-[1px] border-solid border-[#b4b4b4c0] text-[12px] text-pretty"
+        >
+        Standing under a stream seems to be a questionable, unhygienic and reprehensible act, a ridiculous and senseless action. 
+        From below, we see water falling, we anxiously dodge it as we walk down the street, as if it were an attack coming from the architecture. 
+        Seeking to have an affective approach with the building, I decide to perform a patient action, and wait under a stream that falls from my home. 
+        Without shame, but with fear, I expose my body; which, expectant, fragile and patient, waits to be bathed by the water that purifies my house, and then, travels the slope to its destination. 
+        Standing becomes a gesture of recognition of the space, of the building, of the home, a baptism coming from the darkened water that the architecture nonchalantly releases.
+        </p>
+    </section>
+
+    <Footer />
+</main>

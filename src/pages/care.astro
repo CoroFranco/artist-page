@@ -1,0 +1,437 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Felipe Franco Care: Between ceiling and floor Project" />
+
+<main>
+    <section>
+        <div class="sm:h-screen w-screen">
+            <Header />
+            <div class="sm:pr-[25%] text-center sm:text-right">
+                <h1>Care: Between ceiling and floor</h1>
+                <p>2023 - 2024</p>
+            </div>
+
+            <div class="sm:mt-30 mt-20 relative overflow-hidden bg-gray-100">
+                <div class="" id="carousel">
+                    <div class="w-[95%] flex justify-center image mx-auto">
+                        <iframe
+                            class="sm:h-[500px] h-[300px]"
+                            width="1000"
+                            height="500"
+                            src="https://www.youtube.com/embed/yfD6Bo3daX0?si=-ZFMnVhp3EmlUgdB"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="hidden image">
+                        <iframe
+                            class="sm:h-[500px] h-[300px] m-auto"
+                            width="1000"
+                            height="500"
+                            src="https://www.youtube.com/embed/V3QpA1L5g-8?si=dIkzB6FiPEYOF419"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="hidden image">
+                        <iframe
+                            class="sm:h-[500px] h-[300px] m-auto"
+                            width="1000"
+                            height="500"
+                            src="https://www.youtube.com/embed/A5Xa7RaqhxM?si=0E6-HXeFqaqhuqWW"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Botones de navegación -->
+                <button
+                    type="button"
+                    class="absolute top-0 sm:start-20 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    id="carousel-prev"
+                >
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-6 h-6 text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 1 1 5l4 4"></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button
+                    type="button"
+                    class="absolute top-0 sm:end-20 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    id="carousel-next"
+                >
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-6 h-6 text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m1 9 4-4-4-4"></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+            <div
+                class="sm:mt-20 hidden w-screen sm:flex justify-center animate-bounce"
+            >
+                <a href="#next1">
+                    <img
+                        class="cursor-pointer"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO1JREFUSEvtlUEKwjAQRed7CO80OYuCgoIFEQVFQcGCniVzHs/hYiTSQqxJG63dSLvN5L9k8pKCOv7QcT79McAYk6nqUESmdW1k5jMR3UQkD9UFW+QmAZi4CaqaxyCVup2ILKuQGOACYFQWhyB+eLGQq4iMkwCuiJlfIER0sNZmbswYsyeihbeAYLgbr7UoAFmr6gDAKiW8EVDs5AhgFjpAVT2JyLxOgqR7wMxvkJTw2h1UNfUhfvhPNWXmLYC7tXZTtM/Xudf06UqvafzKxDRt+mElXbQypKppU3jSU5ES0vqpaAP5qEXfgDoHPADhtsQZRrNBuAAAAABJRU5ErkJggg=="
+                    />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="next1">
+        <p
+            class="sm:w-screen py-20 text-[12px] text-pretty sm:max-w-[800px] mx-auto w-[90%]"
+        >
+            Based on the work of day laborers in the city of Medellin, those
+            vernacular means that seek to repair the roofs of houses, the
+            project develops a set of gestures for the camera in the public
+            space as a way of bringing to performativity those expressions that
+            are part of a landscape of precariousness in everyday life. However,
+            it is not the precariousness understood from its economic sense, but
+            the poetic relationship between the intention of solving common
+            problems with the availability of resources of a territory.
+        </p>
+        <div class="mb-28 w-[90%] max-w-[1400px] mx-auto">
+            <div class="gallery grid grid-cols-2 gap-4">
+                <img
+                    width="700"
+                    height="700"
+                    loading="lazy"
+                    class="imagen hoverImg"
+                    src="../Cuidados/1.webp"
+                    alt="1"
+                />
+                <img
+                    width="700"
+                    height="700"
+                    loading="lazy"
+                    class="imagen hoverImg"
+                    src="../Cuidados/2.webp"
+                    alt="2"
+                />
+                <img
+                    width="700"
+                    height="700"
+                    loading="lazy"
+                    class="imagen hoverImg"
+                    src="../Cuidados/3.webp"
+                    alt="3"
+                />
+                <img
+                    width="700"
+                    height="700"
+                    loading="lazy"
+                    class="imagen hoverImg"
+                    src="../Cuidados/4.webp"
+                    alt="4"
+                />
+            </div>
+            <p class="text-[11px] mt-0 p-0">
+                Record of action in public space, Medellín
+            </p>
+        </div>
+
+        <div class="w-[90%] max-w-[1400px] mx-auto mb-8">
+            <div class="gallery grid grid-cols-2 gap-4">
+                <img
+                    width="700"
+                    height="700"
+                    loading="lazy"
+                    class="imagen hoverImg"
+                    src="../Cuidados/6.webp"
+                    alt="5"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Cuidados/9.webp"
+                alt="8"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Cuidados/7.webp"
+                alt="6"
+                />
+                <img
+                width="700"
+                height="700"
+                loading="lazy"
+                class="imagen hoverImg"
+                src="../Cuidados/8.webp"
+                alt="7"
+                />
+            </div>
+            <p class="text-[11px] mt-0 p-0">
+                Record of action in public space, Medellín
+            </p>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <button id="cerrarModalBtn" class="btn-cerrar">X</button>
+            <img
+                loading="lazy"
+                id="overlay-img"
+                class="overlay-img"
+                src=""
+                alt=""
+            />
+        </div>
+    </section>
+
+    <p
+        class="w-[90%] max-w-[700px] m-auto my-28 py-10 border-y-[1px] border-solid border-[#b4b4b4c0] text-[12px] text-pretty"
+    >
+        One night while I was at home a storm began to fall, it was raining
+        vertiginously and I could only hear the sound of water on the ceiling,
+        however, in the darkness of my room, a small tinkling sound began to
+        resound that left me unsettled; a drop of water falling periodically on
+        the floor, a drop of water falling periodically on the ceiling, a drop
+        of water falling periodically on the floor. on the floor. When I decided
+        to stand up, I realized that this tiny leak had turned into a puddle and
+        with resignation, I proceeded to mop the floor and place a bucket at two
+        o'clock in the morning. That same week, one afternoon, again in my room,
+        I could hear what seemed to be the preamble of another downpour; the
+        wind, puffing through the cracks of the windows, and the light dimming
+        little by little. Again, without warning, like the desperate leak the
+        other night, a strange sound forced me to look up at the roof. I seemed
+        to hear earth falling from the sky. Well, such a particular sound
+        deserved concentration to know its origin; and so, after a few minutes I
+        found out, frightened, that when the wind blew, dust fell from the roof.
+        Now I understood the reason for the dirt in my room. After this I
+        concluded that I had to fix the roof of my house.
+    </p>
+
+    <section class="flex flex-col w-[90%] max-w-[1400px] mx-auto gap-2 pt-6">
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/15.webp"
+            alt="15"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/11.webp"
+            alt="11"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/12.webp"
+            alt="12"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/13.webp"
+            alt="13"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/14.webp"
+            alt="14"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/10.webp"
+            alt="10"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/16.webp"
+            alt="16"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/17.webp"
+            alt="17"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/18.webp"
+            alt="18"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+        <img
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/19.webp"
+            alt="19"
+        />
+        <p class="mb-10 text-[10px]">
+            Installation view, exhibition Humano demasiado humano, Edificio Antioquia,
+            Medellín.
+        </p>
+    </section>
+
+    <div class="mt-10 max-h-[1000px] overflow-hidden place-items-center flex">
+        <img
+            class="h-full w-screen"
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../Cuidados/20.webp"
+            alt="20"
+        />
+    </div>
+
+    <Footer />
+
+    <script>
+        const images = document.querySelectorAll(".image");
+        const totalSlides = images.length;
+        let currentSlideIndex = 0;
+
+        const prev = document.querySelector("#carousel-prev");
+        const next = document.querySelector("#carousel-next");
+
+        function nextImg() {
+            if (currentSlideIndex < totalSlides - 1) {
+                images[currentSlideIndex].classList.add("hidden");
+                currentSlideIndex++;
+                images[currentSlideIndex].classList.remove("hidden");
+            }
+        }
+        function prevImg() {
+            if (currentSlideIndex > 0) {
+                images[currentSlideIndex].classList.add("hidden");
+                currentSlideIndex--;
+                images[currentSlideIndex].classList.remove("hidden");
+            }
+        }
+
+        prev.addEventListener("click", prevImg);
+        next.addEventListener("click", nextImg);
+
+        // Seleccionar todas las imágenes de la galería
+        const imagenes: NodeListOf<HTMLImageElement> =
+            document.querySelectorAll(".gallery .imagen");
+        // Seleccionar el overlay, la imagen del overlay y el botón de cierre
+        const overlay: HTMLElement = document.getElementById("overlay")!;
+        const overlayImg: HTMLImageElement = document.getElementById(
+            "overlay-img",
+        ) as HTMLImageElement;
+        const cerrarModalBtn: HTMLButtonElement = document.getElementById(
+            "cerrarModalBtn",
+        ) as HTMLButtonElement;
+
+        // Agregar evento de clic a cada imagen de la galería
+        imagenes.forEach((img) => {
+            img.addEventListener("click", () => {
+                overlay.style.display = "flex"; // Mostrar el overlay
+                overlayImg.src = img.src; // Establecer la imagen del overlay
+                document.body.style.overflow = "hidden"; // Bloquear el scroll
+            });
+        });
+
+        // Agregar evento de clic al overlay para cerrar si se hace clic fuera de la imagen
+        overlay.addEventListener("click", (e: MouseEvent) => {
+            if (e.target === overlay) {
+                // Solo cerrar si se hace clic en el overlay (fondo)
+                overlay.style.display = "none"; // Ocultar el overlay
+                document.body.style.overflow = ""; // Restaurar el scroll
+            }
+        });
+
+        // Agregar evento de clic al botón de cierre
+        cerrarModalBtn.addEventListener("click", () => {
+            overlay.style.display = "none"; // Ocultar el overlay
+            document.body.style.overflow = ""; // Restaurar el scroll
+        });
+    </script>
+</main>

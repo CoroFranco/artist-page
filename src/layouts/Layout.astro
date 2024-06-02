@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import "@fontsource/ibm-plex-mono";
 ---
 
 <!doctype html>
@@ -22,30 +24,142 @@ const { title } = Astro.props;
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
 	}
+
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: "IBM Plex Mono", monospace;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+	body {
+		background-color: #eeeeee8c;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
+
+	li {
+		list-style: none;
+	}
+
+	.line::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0%;
+		height: 2px;
+		transform: translate(-50%);
+		background-color: #adadad;
+		transition: width 0.5s ease;
+	}
+
+	.line:hover::after {
+		width: 100%;
+	}
+
+	.fade {
+		animation: fadeIn 1.5s;
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.project-footer {
+		pointer-events: none;
+	}
+
+	.photos {
+	}
+	.photos:hover {
+		cursor: pointer;
+		filter: grayscale(100);
+	}
+
+		.contenedor {
+		max-width: 55%;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+
+
+	.modal {
+		position: fixed;
+		inset: 0;
+		background-color: rgba(59, 59, 59, 0.507);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		animation: fadeIn ease-in 0.5s;
+
+		&.fade-out {
+			animation: fadeOut ease-in 0.5s;
+		}
+
+		img {
+			max-height: 80%;
+			max-width: 80%;
+		}
+	}
+
+	.btn-cerrar {
+		position: fixed;
+		font-size: 25px;
+		top: 5%;
+		right: 16%;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: rgba(233, 233, 233, 0.74);
+		border: none;
+		color: rgb(54, 54, 54);
+		font-weight: 700;
+		cursor: pointer;
+	}
+	
+
+	@media (max-width: 600px) {
+    .btn-cerrar {
+        display: none;
+    }
+}
+
+
+
+/* Estilo para el overlay (fondo oscuro) */
+.overlay {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(88, 88, 88, 0.8); /* Fondo negro semi-transparente */
+    justify-content: center; /* Centrado vertical y horizontal */
+    align-items: center;
+    z-index: 1000; /* Por encima de otros elementos */
+}
+
+/* Estilo para la imagen dentro del overlay */
+.overlay-img {
+    max-width: 90%;
+    max-height: 90%;
+	overflow: hidden;
+}
+
+.hoverImg:hover {
+	cursor: pointer;
+	filter: grayscale(100);
+}
+
+
+
+
 </style>

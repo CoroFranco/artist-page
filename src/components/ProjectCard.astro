@@ -1,0 +1,21 @@
+---
+const { video, page = '/', titulo, fecha, color = "text-zinc-200" } = Astro.props;
+---
+
+<a href= {page}><div
+        class="relative rounded overflow-hidden border-[#cacaca] border-[0.5px]">
+        <video
+            loop
+            preload="auto"
+            class="filter cursor-pointer grayscale video"
+            muted
+            src={video}></video>
+        <footer
+            class={`${color} cursor-pointer text-[15px] font-bold absolute top-4 left-1/2 project-footer text-center py-2 hidden`}
+        >
+            <h2>{titulo}</h2>
+            <p>{fecha}</p>
+        </footer>
+        <hr />
+    </div></a
+>

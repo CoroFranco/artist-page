@@ -1,0 +1,345 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Felipe Franco How to waste time working Project" />
+
+<main>
+    <section>
+        <div class="sm:h-screen w-screen">
+            <Header />
+            <div class="sm:pr-[25%] text-center sm:text-right">
+                <h1>How to waste time working</h1>
+                <p>2023</p>
+            </div>
+
+            <div class="sm:mt-30 mt-20 relative overflow-hidden bg-gray-100">
+                <div class="" id="carousel">
+                    <div class="w-[95%] flex justify-center image mx-auto">
+                        <iframe
+                            class="sm:h-[500px] h-[300px]"
+                            width="1000"
+                            height="500"
+                            src="https://www.youtube.com/embed/rDmGIjOalxo?si=o5q93ZlX5gTQvNuk"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="hidden image">
+                        <iframe
+                            class="sm:h-[500px] h-[300px] m-auto"
+                            width="1000"
+                            height="500"
+                            src="https://www.youtube.com/embed/HaHMg3WCqgA?si=k_p-LRhhkJTyQn2B"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Botones de navegación -->
+                <button
+                    type="button"
+                    class="absolute top-0 sm:start-20 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    id="carousel-prev"
+                >
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-6 h-6 text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 1 1 5l4 4"></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button
+                    type="button"
+                    class="absolute top-0 sm:end-20 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    id="carousel-next"
+                >
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none"
+                    >
+                        <svg
+                            class="w-6 h-6 text-gray-800 rtl:rotate-180"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 6 10"
+                        >
+                            <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m1 9 4-4-4-4"></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+            <div
+                class="sm:mt-20 hidden w-screen sm:flex justify-center animate-bounce"
+            >
+                <a href="#next2">
+                    <img
+                        class="cursor-pointer"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO1JREFUSEvtlUEKwjAQRed7CO80OYuCgoIFEQVFQcGCniVzHs/hYiTSQqxJG63dSLvN5L9k8pKCOv7QcT79McAYk6nqUESmdW1k5jMR3UQkD9UFW+QmAZi4CaqaxyCVup2ILKuQGOACYFQWhyB+eLGQq4iMkwCuiJlfIER0sNZmbswYsyeihbeAYLgbr7UoAFmr6gDAKiW8EVDs5AhgFjpAVT2JyLxOgqR7wMxvkJTw2h1UNfUhfvhPNWXmLYC7tXZTtM/Xudf06UqvafzKxDRt+mElXbQypKppU3jSU5ES0vqpaAP5qEXfgDoHPADhtsQZRrNBuAAAAABJRU5ErkJggg=="
+                    />
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-[95%] max-w-[1400px] mx-auto">
+        <div
+            class="sm:grid sm:grid-cols-2 gap-4 pt-20 sm:pt-0 pb-20 w-[85%] max-w-[1000px] mx-auto"
+            id="next2"
+        >
+            <img src="../PerderElTiempo/11.webp" alt="imagen11" />
+            <p class="text-[12px] text-pretty pt-10 sm:pt-0">
+                How to waste time working , is a project carried out during the
+                Nectar Artistic Residency in Spain during the year 2023. This
+                project explores the actions that take place in the landscape,
+                the new ways of understanding the craft of making, in a context
+                far from the Colombian rural daily life. In a rurality stripped
+                of the craft of work, in a natural but artificial environment,
+                located on the outskirts of Barcelona, a series of questions
+                begin to take shape in relation to economic practices based on
+                work in the countryside. It is in this place where the idea of
+                "trade" begins to make sense in terms of its relationship with
+                time, movement, landscape, architecture and the transformation
+                of matter. Thus, a search for the meaning of work is proposed,
+                not from the productive point of view, but from the constant and
+                binding action to uninhabited and disused spaces.
+            </p>
+        </div>
+
+        <div class="flex flex-col w-[90%] max-w-[1400px] mx-auto gap-2 pt-6">
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/5.webp"
+                alt="14"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/2.webp"
+                alt="11"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/3.webp"
+                alt="12"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/4.webp"
+                alt="13"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/1.webp"
+                alt="15"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/6.webp"
+                alt="10"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/7.webp"
+                alt="16"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/8.webp"
+                alt="17"
+            />
+            <p class="mb-10 text-[10px]">
+                Installation view, Deambulantes exhibition, Espronceda, Barcelona, ES.
+            </p>
+            <div
+                class="max-w-[700px] w-[90%] m-auto my-28 py-10 border-y-[1px] border-solid border-[#b4b4b4c0] text-[12px] text-pretty"
+            >
+                <p class="mt-4 sm:mt-0 ">
+                    Felipe Franco, through his artistic practice and in dialogue
+                    with the cultural and everyday practices of his context,
+                    searches in the rural world for those trades, ways of doing
+                    or objects with a specific function that are increasingly
+                    forgotten in order to question their original function, give
+                    them a new meaning and experiment with them in an intuitive
+                    and spontaneous way. In Nectar, attracted by one of the
+                    oldest spaces of the farmhouse, which was originally the
+                    kitchen of the masovers*, Felipe chooses a material, in this
+                    case an esparto rope, and without knowing what exactly to do
+                    with it, he begins to work with his hands through the act of
+                    unweaving it, day after day, representing the work of a
+                    trade and exploring the times in a rural argument. A craft
+                    that may not be real, but with this action, fruit of his
+                    intuition, the artist works with the material, with the
+                    body, with the territory, from the interior and exterior,
+                    from the unknown, charging with meaning the mere action of
+                    unweaving, of undoing, of returning to the original state of
+                    the material. The work of a craft, to work with the hands a
+                    material, that this material is a product of the craft, is
+                    an act that is repeated every day and that for the artist is
+                    meditative, that which connects him conceptually and
+                    physically with the place that surrounds him and the
+                    elements that form it. With the will to bring this act to
+                    the exterior space, Felipe Franco finds two objects that
+                    catch his attention and that have different uses in the
+                    rural and industrial world, but that appear to be something
+                    else (ladder, cart). Franco interacts with these objects,
+                    giving them a new use and thus altering their original
+                    function, loading them, intervening them and relating them
+                    to his body. In Espronceda we can see these intervened
+                    objects and the record of these actions that are apparently
+                    unproductive in the context of a productive society, but
+                    that endow Felipe Franco's work with a poetic, historical
+                    and aesthetic charge.
+                </p>
+                <p class="font-bold pt-8">- Olga Sureda</p>
+            </div>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/9.webp"
+                alt="18"
+            />
+            <p class="mb-10 text-[10px]">
+                Action registration in public space, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/12.webp"
+                alt="20"
+            />
+            <p class="mb-10 text-[10px]">
+                Action registration in public space, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/13.webp"
+                alt="20"
+            />
+            <p class="mb-10 text-[10px]">
+                Action registration in public space, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/14.webp"
+                alt="20"
+            />
+            <p class="mb-10 text-[10px]">
+                Action registration in public space, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/16.webp"
+                alt="20"
+            />
+            <p class="mb-10 text-[10px]">
+                Action registration in public space, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/17.webp"
+                alt="20"
+            />
+            <p class="mb-10 text-[10px]">
+                Action registration in public space, Barcelona, ES.
+            </p>
+            <img
+                width="1400"
+                height="935"
+                loading="lazy"
+                src="../PerderElTiempo/18.webp"
+                alt="20"
+            />
+            <p class="mb-10 text-[10px]">
+                Action registration in public space, Barcelona, ES.
+            </p>
+        </div>
+    </section>
+    <div class="mt-10 max-h-[1000px] overflow-hidden place-items-center flex">
+        <img
+            class="w-full"
+            width="1400"
+            height="935"
+            loading="lazy"
+            src="../PerderElTiempo/15.webp"
+            alt="20"
+        />
+    </div>
+
+    <Footer />
+
+    <script src="../carousel.js"></script>
+</main>

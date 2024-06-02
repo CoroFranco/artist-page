@@ -1,0 +1,176 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Felipe Franco Surface Project" />
+<main>
+    <div class="sm:h-screen w-screen">
+        <Header />
+        <div class="sm:pr-[25%] text-center sm:text-right">
+            <h1>No place for a surface</h1>
+            <p>2022</p>
+        </div>
+
+        <div
+            class="mt-6 p-4 sm:p-10 sm:w-[95%] w-screen xl:max-w-[60%] sm:max-w-[1000px] mx-auto"
+        >
+            <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe
+                    src="https://player.vimeo.com/video/775558567?h=e12545b63a"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%"
+                    allowfullscreen></iframe>
+            </div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        <div class="w-screen hidden sm:flex justify-center animate-bounce">
+            <a href="#next">
+                <img
+                    class="w-[30px] cursor-pointer"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO1JREFUSEvtlUEKwjAQRed7CO80OYuCgoIFEQVFQcGCniVzHs/hYiTSQqxJG63dSLvN5L9k8pKCOv7QcT79McAYk6nqUESmdW1k5jMR3UQkD9UFW+QmAZi4CaqaxyCVup2ILKuQGOACYFQWhyB+eLGQq4iMkwCuiJlfIER0sNZmbswYsyeihbeAYLgbr7UoAFmr6gDAKiW8EVDs5AhgFjpAVT2JyLxOgqR7wMxvkJTw2h1UNfUhfvhPNWXmLYC7tXZTtM/Xudf06UqvafzKxDRt+mElXbQypKppU3jSU5ES0vqpaAP5qEXfgDoHPADhtsQZRrNBuAAAAABJRU5ErkJggg=="
+                />
+            </a>
+        </div>
+    </div>
+
+    <section class="sm:w-screen w-[90%] max-w-[1000px] mx-auto pb-20" id="next">
+        <div
+            class="sm:grid sm:grid-cols-2 gap-10 text-[12px] text-wrap place-items-center"
+        >
+            <img class="" src="../Superficie/18.webp" alt="imagen" />
+            <div>
+                <p class="mt-4 sm:mt-0">
+                    Noise is a vertiginous vibration that does not allow to give
+                    shape to the things that appear in between. When life
+                    becomes saturated, it leaves invisible dirt no choice but to
+                    make its home in the cracks, in the crevices, in the
+                    margins, where its presence is least heavy. However, when
+                    the bristles arrive to scrutinize and eliminate, the
+                    particles - the tiny things of life that are capable of
+                    sustaining themselves in the void, or even being breathed -
+                    seek escape by any means, trying not to stay long outside
+                    the ditches that provide them with a habitat. The millenary
+                    craft of cleaning, that apparently palliative task related
+                    to hygiene and good living, has cleanliness as its fruit and
+                    flower, but it has an undeniable root: before impeccability,
+                    sin was present; dirt. Sweeping implies moving everything,
+                    disturbing the settled and turning dirt into a companion in
+                    the tireless dance of two different nomads. On the one hand,
+                    the nomad who cleans looking for a more peaceful habitation;
+                    on the other hand, the one who inhabits the whole world, who
+                    travels and sleeps among the tiles, the cobblestones, the
+                    asphalt, the grates and the city lungs. What hides in the
+                    mist of the houses, in the shadows of the spaces inhabited
+                    by feet and shoes, by crawling paws and hands, what lies
+                    like an unnoticed white noise, is what gives shape and
+                    meaning to the everyday life of those who live there: it
+                    keeps them in vital tension, permanently challenged by the
+                    impossibility of the dirt disappearing. If the invisible
+                    noise is always there, to whom does a house and its molds
+                    belong? To the one who considers himself an inhabitant, or
+                    to the inevitable and eternal dirt, which lives in permanent
+                    exile and accepts it because it knows how to return to the
+                    cracks?
+                </p>
+                <p class="font-bold pt-8">- Santiago Saldarriaga Montoya</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <img
+            class="w-screen"
+            loading="lazy"
+            src="../Superficie/img1.webp"
+            alt=""
+        />
+
+        <div class="grid grid-cols-4 gallery" id="gallery"></div>
+
+        <p
+            class="sm:w-screen py-20 text-[12px] text-pretty sm:max-w-[800px] mx-auto w-[90%]"
+        >
+            From an exercise of recognition of the urban space, the project
+            raises the possibility of understanding the architectural body
+            within the city as an everyday vestige. Buildings of any nature
+            that, within the contemporary inhabiting of the city, end up being
+            traces of the transformation of a city. As a fundamental part,
+            practices and actions for and with architecture are highlighted,
+            seeking the way to collect different elements, sonorous, material
+            and visual, that compose the idea of an urban identity in the
+            context of a city like Medellin. In this way, Sin lugar para una
+            superficie is a proposal that, within the formal, proposes an
+            installation space that alludes to different surface designs in the
+            buildings of the city, but that tend to disappear over time due to
+            sound and movement.
+        </p>
+
+        <img loading="lazy" src="../Superficie/img2.webp" alt="imagen2" />
+    </section>
+
+    <Footer />
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            crearGaleria();
+        });
+
+        function crearGaleria() {
+            let cantidadImg = 16;
+            const galer = document.querySelector(".gallery");
+            for (let i = 1; i <= cantidadImg; i++) {
+                const imagen = document.createElement(
+                    "IMG",
+                ) as HTMLImageElement;
+                imagen.src = `../Superficie/${i}.webp`;
+                imagen.alt = `imagen${i}`;
+                imagen.width = 500;
+                imagen.height = 500;
+                imagen.loading = "lazy";
+                imagen.classList.add("photos");
+                galer.appendChild(imagen);
+
+                imagen.onclick = function () {
+                    mostrarImagen(i);
+                };
+            }
+        }
+
+        function mostrarImagen(i) {
+            const imagen = document.createElement("IMG") as HTMLImageElement;
+            imagen.src = `../Superficie/${i}.webp`;
+            imagen.alt = `imagen${i}`;
+
+            const modal = document.createElement("DIV");
+            modal.classList.add("modal");
+            modal.appendChild(imagen);
+            modal.onclick = function (e) {
+                if (e.target === modal) {
+                    cerrarModal();
+                }
+            };
+
+            const cerrarModalBtn = document.createElement("BUTTON");
+            cerrarModalBtn.textContent = "X";
+            cerrarModalBtn.classList.add("btn-cerrar");
+            cerrarModalBtn.onclick = cerrarModal;
+
+            const body = document.querySelector("body");
+            body.classList.add("overflow-hidden");
+            body.appendChild(modal);
+            body.appendChild(cerrarModalBtn);
+        }
+
+        function cerrarModal() {
+            const modal = document.querySelector(".modal");
+            const cerrarModalBtn = document.querySelector(".btn-cerrar");
+            const body = document.querySelector("body");
+
+            if (modal && cerrarModalBtn) {
+                body.removeChild(modal);
+                body.removeChild(cerrarModalBtn);
+                body.classList.remove("overflow-hidden");
+            }
+        }
+    </script>
+</main>

@@ -1,0 +1,24 @@
+---
+const {head} = Astro.props
+---
+
+
+
+<header class="inline-block text-center  fade sm:flex w-full justify-around pt-5">
+    <a href="/"> <h2 class="sm:text-[18px] font-extralight text-xl cursor-pointer">Felipe Franco</h2></a>
+
+    <nav
+        class="pt-8 text-[18px] text-[#757575] flex gap-4 justify-center sm:text-[18px] sm:pt-0 font-extralight hover:[&>li]:bg-[#454545] hover:[&>li]:bg-opacity-10 [&>li]:rounded [&>li]:px-1"
+    >
+        <li class="relative">
+            <a class="line" href="/projects/">Projects</a>
+        </li>
+        <li class="relative"><a class="line" href="/about">Statement</a></li>
+        <li class="relative"><a class="line" href="/cv">CV</a></li>
+        <li class="relative"><a class="line" href="/contact">Contact</a></li>
+    </nav>
+</header>
+
+<h1 class="text-black fade text-3xl m-10 ">
+    {head}
+</h1>

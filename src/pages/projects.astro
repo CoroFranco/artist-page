@@ -1,0 +1,126 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Felipe Franco Projects" />
+
+<Header head="" />
+
+<main
+	class="pb-10 grid-cols-1 w-full gap-6 grid sm:grid-cols-2 place-items-center sm:gap-4 sm:w-[90%] sm:max-w-[900px]"
+	id="pro"
+>
+	<ProjectCard
+		page="/surface"
+		color="text-[#454545]"
+		video="../Superficie/videoBase.webm"
+		titulo="No place for a surface"
+		fecha="( 2021 - 2022 )"
+	/>
+	<ProjectCard
+		page="/care"
+		color="text-[#454545]"
+		video="../Cuidados/videoBase.webm"
+		titulo="Care: Between ceiling and floor"
+		fecha="( 2023 - 2024 )"
+	/>
+	<ProjectCard
+		page="/waste"
+		video="../PerderElTiempo/videoBase.webm"
+		titulo="How to waste time working"
+		fecha="( 2023 )"
+	/>
+	<ProjectCard
+		page="/dust"
+		color="text-[#857878]"
+		video="../Polvo/videoBase.webm"
+		titulo="We are dust"
+		fecha="( 2023 )"
+	/>
+	<ProjectCard
+		page="/baptism"
+		color="text-[#454545]"
+		video="../Bautizo/videoBase.webm"
+		titulo="Baptism"
+		fecha="( 2023 )"
+	/>
+	<ProjectCard
+		page="/extender"
+		video="../Extender/videoBase.webm"
+		titulo="Extender"
+		fecha="( 2022 )"
+	/>
+	<ProjectCard
+		page="/breathing"
+		video="../Respiracion/videoBase.webm"
+		titulo="Breathing"
+		fecha="( 2022 )"
+	/>
+	<ProjectCard
+		page="/sweep"
+		color="text-[#454545]"
+		video="../Barrer/videoBase.webm"
+		titulo="Sweep"
+		fecha="( 2021 )"
+	/>
+	<ProjectCard
+		page="/demoler"
+		color="text-[#454545]"
+		video="../Demoler/videoBase.webm"
+		titulo="De-moler"
+		fecha="( 2021 )"
+	/>
+</main>
+
+<script>
+	let videos = document.querySelectorAll(
+		".video",
+	) as NodeListOf<HTMLMediaElement>;
+	let footers = document.querySelectorAll(".project-footer");
+	let conte = document.querySelector("#pro");
+
+	function handleMouseEnter(video, footer) {
+		footer.classList.remove("hidden");
+		footer.classList.add("fade");
+		video.play();
+		video.classList.remove("grayscale");
+	}
+
+	function handleMouseLeave(video, footer) {
+		footer.classList.add("hidden");
+		footer.classList.remove("fade");
+		video.pause();
+		video.currentTime = 0;
+		video.classList.add("grayscale");
+	}
+
+	function handleResize() {
+		let width = window.innerWidth;
+
+		if (width > 630) {
+			videos.forEach(function (video, i) {
+				video.addEventListener("mouseenter", function () {
+					handleMouseEnter(video, footers[i]);
+				});
+
+				handleMouseLeave(video, footers[i]);
+				video.addEventListener("mouseleave", function () {
+					handleMouseLeave(video, footers[i]);
+				});
+			});
+		} else {
+			videos.forEach(function (video, i) {
+				handleMouseEnter(video, footers[i]);
+				video.classList.remove("border-slate-400");
+				video.classList.remove("border-[1px]");
+				conte.classList.remove("gap-6");
+			});
+		}
+	}
+
+	window.addEventListener("resize", handleResize);
+
+	handleResize();
+</script>

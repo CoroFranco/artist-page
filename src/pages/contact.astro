@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Felipe Franco Artist Contact" />
+
+<Header />
+
+<main
+    class="flex flex-col place-items-start w-[90%] max-w-[1000px] gap-6 mt-10"
+>
+    <h1 class="text-xl">Contact</h1>
+    <div class="flex place-items-center gap-5">
+        <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAsVJREFUWEftlztoFEEYx//f3EoSNcRC8VFE0mkhtkGbYCdKImqIhH0cBwZBg4/CV8RGxRcE5EAwxWVv9ghKVFQUO0mjpBUL7YIESSSNR9REXOczC3dhTnLZ29uLpLjpdr7Xb//zzewsYZUNWmU8qAOFrUhdoagKkW3bV4joJDNvDguOYyeir0qptOd5N/Q8JUtmWdYgEZ2NU6iK2GtSyqvFuBIg27ZnAGysImmckCkp5bZyQFw0NDY2rhsaGvoZp1K52L6+vrXz8/M/inYp5aIw/yq0CATgIzMf8DxvopZQlmW1EdErADujAgX+s0RkZrPZF7WAchynk5lzAJr1fJUqpMcMzs3NnR8dHf1TDVh3d3eiqanpDoBzS8VXCvQJwA4twVshxFHXdaejQCWTyS1KqccA9mpxJbkrAmLm9UT0EMBBLdGMUupQLpd7VwmUaZp7hBDPAGzS/F8y8zEi+h6ph4rUjuNcYubrAEQhQbBsA1LK28tB2bZ9AUBw6CUKfoqZBzzPuxU827a9uIEqUkh3sixrHxE9AbBBg3htGEZPJpOZ1cFSqVSz7/uPAOzX5r8x8xHP894U52IBBUl6e3u3G4bxHMBurdCEEKLLdd0PwVwymdyllAp82jSf977vd42MjHzWwWMDBcn6+/sb8vl8duGM6tGS/wKQKjxnADRoNq+lpeV4Op0OfEpGTYA0uU8BGFzokTVl+ug3gDNSyvvl+qymQIXlaVdKBQemvoMC05QQ4rDruuMhTV99U5dLbJrmViHEUwDtBZ/xRCLROTw8HHyklx01V6hYraOjw2htbT3BzDw5OflgbGzMD4OJve0rKRDVZ8UUigpSs3Oo2sL/bZfFBaxoyRzHmV7py/0SL7LsFfYmgItx3z5ifPlLPgCyLOsyEZ1e4sCLWCfU/QuAe1LKu7pn/c81TLe6QnWFwhQIs/8FJhVDNFrxufoAAAAASUVORK5CYII="
+        />
+        <p>lfelipe.alzate1@gmail.com</p>
+    </div>
+
+    <div class="flex place-items-center gap-5">
+        <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAABMtJREFUWEftV2toHFUU/s5ubSYt/lF8okGkam1LfUARRTCKUq2IP9r4aHfuHRYNtDUgVkGLrUmrKCoqUi2u2uaeSY2mKgqFSisaBF9YqdqHlT4ojSho/wSsLMlmjnvDTJnOzu5sEn/0R8+/3D3nu1/OOfecbwinmdFpxgdnCGVVpOkMua47D8B1RHQZgHwWcPj7mIgcBbDb9/29zcRkEtJaPygi6wDMagawgc9BInraGDPQCKcuoUKhcFE+nzcicscUiZwSTkQ78/m8t2nTpj/ScOsSUkp9BmBhGPQNgM0AfnQcZ2+pVBpthmRXV1fL8PDwNQBuALACwOwwbjszL2qakNZ6sYh8aAOIaLUx5vlmCDTy6ejomN7a2voagOUh7hJjzEfJmNQMKaUOhj0zwMz3T5aMUupWAEuJ6AIA21paWjaXy+VdAOYD+I2Zo4ydvKKG0LJly+bk8/l94X9xizHmq8kS0lqvFJEN8TIppQoAfHs2NjZ26ZYtW36P49cQipfLcZzp9fqlWCyeXalUVgG4EcC1RCQi8hOA70TkJd/3TyilbHbfDy80zOwVCoVZuVzOVsDaPcy8LYvQchF5E8BxZj4vLTtKqdsBGAAX18neUC6XU729vYPh2DgfwD5m/tx13ZlE9E8Yt5KZ7V31S6aUegLAiwAOMfMVyQs9z2sPguDL2PkXRPSLiEwDMAfAbdFvRHSzMebrBAYppQJ7JiJP+b7/QhahNQDWicge3/dt8520sEz7AVxiMxgEwdK+vr6dcR/XdRcS0XsAzgFw1HGcuaVS6d+4j1KqEk77tcy8PotQd5X8MwB2MfOCBNBDAN4OzxYx8/Y6JV0CYGuYBeX7/ngTR6aUsnPMZjSbkNa6R0TW2uZkZtuwcaB3ARSrA/NbZr6pTv+MHyuldttmB7CRme1QjOOUAbQ0RUgpZfeWLdvPzGwB40C/htN2AzN3ZRAqAXi4Ds6Jap/OIKJ1xhhbjZNW8+yVUlHJDjDz1QlCBwBcRURvGGMeaUTIdd23iKiTiPYbY+YmcOwrm1nto/XMbKuRTSgNSGvdLyIPpJUzSU4pZWeS3WM+M6sEIdvkrdWzbmbumTQh13WfJKJor9UMtQhYa32fiHxg/yaix4wxryYIjQA4i4jWGGOezSJka2rLVlMyz/MuDILACq1zAfxNRAVjzI7EZXdV92Bf+Oz/HB0dnd/f33888unu7s4dOXJkLCRbs7jTemh1lf1zAA4zc40o8zzvziAI4s+97mC0Q5KZ40MUnZ2dM8rlsm1qa6uY+ZWGGdJa/6+rI9lb8dVBRCuMMRuzSnZvdX58Yie74zgtGcvVrhkrvqzWDpLLNe0VFovFyyuVymH7W3UbLK5ug48bEvI8b3YQBHbe2IackvxIIxSXH0Q0zxgzLnUiyxJoO5g5krFp+BM6a29vn9bW1vZDOMH/YmYr3E6xVEJa67tFJNIpPeGskAndnnBOkbCp0riuyNdaD4hIR4j7fXXDv2NF/rFjx/YMDg7abZ1pkcgXkQVE9Gj0KWWVxNDQ0PVpOHUJhc/z5UiUZ97epAMRbR0ZGVkRn02ZPRR3CPXN6wCubPLOem6HADzOzJ82wsn8co2CT5tP6SlmZcLhTWdowsiTDDhDKCtx/wGobCdDOMWFFAAAAABJRU5ErkJggg=="
+        />
+        <a target="_blank" href="https://www.instagram.com/felipe.afranco/">
+            <p>@felipe.afranco</p>
+        </a>
+    </div>
+</main>
