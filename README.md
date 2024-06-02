@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Astro Starter Kit: Basics
 
 ```sh
@@ -52,3 +53,7 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+=======
+# artist-page
+This repository hosts the code for artist's portfolio website, designed to showcase their artistic projects and provide visitors with an interactive experience to explore their work.
+>>>>>>> 58246cf73f5b306d575852cd0fee160c416c59b5
